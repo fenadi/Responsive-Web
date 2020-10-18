@@ -1,0 +1,438 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #1c1a18;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.banner img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .25;
+}
+
+.banner .content{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+.banner .content h2{
+	color: #ffe2c7;
+	font-size: 60px;
+}
+
+.banner .content p{
+	color: #ffe2c7;
+	font-size: 18px;
+}
+
+.banner header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+.banner header .logo{
+	color: #ffe2c7;
+	text-decoration: none;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.banner header .logo span{
+	color: #ffba00;
+}
+
+.banner header .toggle{
+	position: relative;
+	width: 36px;
+	height: 28px;
+	background: url(vektor/toggle.png);
+	background-size: cover;
+	cursor: pointer;
+}
+
+.about{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.about .contentbox{
+	background: #fff;
+	padding: 100px;
+	width: 50%;
+}
+
+.heading{
+	color: #655b50;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.text{
+	color: #655b50;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.about .imgbox{
+	background: url(vektor/callingKpop.svg);
+	width: 50%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.services{
+	background: #fff;
+	padding: 100px;
+	text-align: center;
+}
+
+.services .container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.services .container .servicesbox{
+	position: relative;
+	background: #655b50;
+	width: 350px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.services .container .servicesbox h2, p{
+	color: #ffe2c7;
+}
+
+.services .container .servicesbox img{
+	max-width: 100px;
+}
+
+.services .container .servicesbox h2{
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.tech{
+	background: #fff;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tech .contentbox{
+	max-width: 800px;
+}
+
+.tech .imgbox{
+	max-width: 250px;
+}
+
+.tech .imgbox img{
+	max-width: 100%;
+}
+
+.client{
+	background: #fff;
+	padding: 100px;
+	text-align: center;
+}
+
+.client .imgbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.client .imgbox img{
+	max-width: 200px;
+	margin-top: 20px;
+	opacity: .25;
+	cursor: pointer;
+}
+
+.client .imgbox img:hover{
+	opacity: 1;
+}
+
+.testimonials{
+	position: relative;
+	padding: 100px;
+	background: #fff;
+	text-align: center;
+}
+
+.testimonials .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+.testimonials .container .contentbox{
+	background: #655b50;
+	padding: 60px 50px;
+	width: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	border-radius: 20px;
+}
+
+.testimonials .container .contentbox p{
+	font-style: italic;
+}
+
+.testimonials .container .contentbox h3{
+	width: 100%;
+	text-align: end;
+	font-weight: 500;
+	color: #ffba00;
+}
+
+.contact{
+	padding: 100px;
+	background: #fff;
+	text-align: center;
+}
+
+.imgbox2{
+	background: url(vektor/sentiment.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+
+/*.redbg{
+	background: url(vektor/sakura.jpg) !important;
+	background-size: cover;
+	background-position: center;
+}*/
+
+.form .inputbox{
+	margin-bottom: 40px;
+}
+
+.form .inputbox input{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #655b50;
+	border-bottom: 2px solid #655b50;
+}
+
+.form .inputbox input::placeholder{
+	color: #655b50;
+}
+
+.form .inputbox textarea{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	min-height: 150px;
+	color: #655b50;
+	border-bottom: 2px solid #655b50;
+}
+
+.form .inputbox textarea::placeholder{
+	color: #655b50;
+}
+
+.form .inputbox button{
+	width: 100px;
+	background: #fff;
+	border: 2px solid #655b50;
+	border-radius: 5px;
+	outline: none;
+	color: #655b50;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.footer{
+	background: #fff;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer ul li{
+	list-style-type: none;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.footer ul li a img{
+	filter: invert(1);
+	max-width: 20px;
+}
+
+@media (max-width: 991px){
+	.banner{
+		padding: 50px;
+	}
+
+	.banner header{
+		padding: 20px 50px;
+	}
+
+	.banner .content h2{
+		font-size: 36px;
+	}
+
+	.banner .content p{
+		font-size: 16px;
+	}
+
+	.about{
+		flex-direction: column;
+	}
+
+	.about .contentbox{
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+
+	.about .imgbox{
+		width: 100%;
+		text-align: center;
+		min-height: 400px;
+	}
+
+	.services{
+		padding: 50px;
+	}
+
+	.services .container{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.services .container .servicesbox{
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+
+	.tech{
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.tech .imgbox{
+		margin-top: 40px;
+		max-width: 250px;
+	}
+
+	.client{
+		padding: 50px;
+	}
+
+	.client .imgbox{
+		justify-content: center;
+	}
+
+	.testimonials{
+		justify-content: center;
+	}
+
+	.testimonials .container{
+		padding: 100px;
+	}
+
+	.testimonials .contentbox{
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+	}
+
+	.testimonials .contentbox:last-child{
+		margin-bottom: 0px;
+	}
+
+	.contact{
+		padding: 50px;
+	}
+
+	.footer{
+		padding: 20px 50px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer ul{
+		margin-bottom: 20px;
+	}
+}
